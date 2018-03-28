@@ -1,2 +1,1 @@
-worker: node dayn.js 
-worker: node milikanec.js 
+worker: node dayn.js, node milikanec.js 
