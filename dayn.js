@@ -133,7 +133,7 @@ bot.on('message', msg => {
 	
 	if(ignoreCase.equals(msg.content, 'set.time 60')){
 		if(msg.author.id === '278984183240720385'){
-			m = m + 60;
+			m = m + 59;
 			console.log('+hour');
 		}
 		return;
