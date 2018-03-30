@@ -182,8 +182,7 @@ formateTime = function(){
         formattedD = '0' + d;
     else
         formattedD = d;
-    bot.user.setPresence({ game: { name: 'Вьетнам ' + formattedD + ':' + formattedH + ':' + formattedM, type: 2 } });
-}
+};
 
 logTime = function () {
     console.log('M:' + m);
@@ -196,3 +195,4 @@ getRandomInt = function(min, max)
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+setTimeout(updateInOneMinute, 60000);
