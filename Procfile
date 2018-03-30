@@ -1,1 +1,1 @@
-worker: node dayn.js 
+worker: node dayn.js
