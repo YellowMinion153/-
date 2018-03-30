@@ -150,7 +150,7 @@ bot.on('message', msg => {
 	if(ignoreCase.equals(msg.content, 'подготовка')){
 		if(msg.author.id === '278984183240720385'){
 			h = 12;
-			m = 00;
+			m = 59;
 			console.log('подготовка');
 		}
 		return;
