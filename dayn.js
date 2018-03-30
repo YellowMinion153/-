@@ -133,7 +133,7 @@ bot.on('message', msg => {
 	
 	if(ignoreCase.equals(msg.content, 'set.time 60')){
 		if(msg.author.id === '278984183240720385'){
-			m = m + 59;
+			m = m + 60;
 			console.log('+hour');
 		}
 		return;
@@ -143,6 +143,16 @@ bot.on('message', msg => {
 		if(msg.author.id === '278984183240720385'){
 			h = h + 24;
 			console.log('+day');
+		}
+		return;
+	};
+	
+	if(ignoreCase.equals(msg.content, 'restart.time')){
+		if(msg.author.id === '278984183240720385'){
+			d = 0;
+			h = 0;
+			m = 0;
+			console.log('Defolt time');
 		}
 		return;
 	};
