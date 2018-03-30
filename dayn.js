@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var ignoreCase = require('ignore-case');
 
-var d = 00, h = 00, m = 00;
+var d = 00, h = 00, m = 00, n = ~;
 
 bot.on('ready', () => {
     console.log('Go bitch');
@@ -130,8 +130,15 @@ bot.on('message', msg => {
         msg.reply('Пошел нахер пидр');
             return;
         }
-        }
-
+    }
+	
+	if(ignoreCase.equals(msg.content, 'set.time n')){
+		if(msg.author.id === '278984183240720385'){
+			m = m + n;
+			return;
+		}
+	};
+	
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
