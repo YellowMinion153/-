@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 var ignoreCase = require('ignore-case');
-var n = ~;
+var n = ~
 var d = 00, h = 00, m = 00;
 
 bot.on('ready', () => {
