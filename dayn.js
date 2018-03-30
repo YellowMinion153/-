@@ -167,7 +167,7 @@ bot.on('message', msg => {
 	};
 	
 	if(msg.content, 'подготовка'){
-		bot.channels.get('429349387139809281').send('```*собирает повстанцев*```')
+		bot.channels.get('429349387139809281').send('ыы')
 		return;
 	};
 	
