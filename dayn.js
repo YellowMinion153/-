@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var ignoreCase = require('ignore-case');
 
-var n = 0; 
-
 var d = 00, h = 00, m = 00;
 
 bot.on('ready', () => {
@@ -133,9 +131,16 @@ bot.on('message', msg => {
         }
     }
 	
-	if(ignoreCase.equals(msg.content, 'set.time' + 'n')){
+	if(ignoreCase.equals(msg.content, 'set.time 60')){
 		if(msg.author.id === '278984183240720385'){
-			m = m + n;
+			m = m + 60;
+		}
+		return;
+	};
+	
+	if(ignoreCase.equals(msg.content, 'set.time 24')){
+		if(msg.author.id === '278984183240720385'){
+			h = h + 24;
 		}
 		return;
 	};
