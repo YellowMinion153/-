@@ -147,6 +147,15 @@ bot.on('message', msg => {
 		return;
 	};
 	
+	if(ignoreCase.equals(msg.content, 'подготовка')){
+		if(msg.author.id === '278984183240720385'){
+			h = 12;
+			m = 00;
+			console.log('подготовка');
+		}
+		return;
+	};
+	
 	if(ignoreCase.equals(msg.content, 'restart.time')){
 		if(msg.author.id === '278984183240720385'){
 			d = 0;
