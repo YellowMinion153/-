@@ -132,7 +132,7 @@ bot.on('message', msg => {
         }
     }
 	
-	if(ignoreCase.equals(msg.content, 'set.time n')){
+	if(ignoreCase.equals(msg.content, 'set.time' + n)){
 		if(msg.author.id === '278984183240720385'){
 			m = m + n;
 			return;
