@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 var ignoreCase = require('ignore-case');
 
-var d = 00, h = 00, m = 00, n = ~;
+var d = 00, h = 00, m = 00, n = 0;
 
 bot.on('ready', () => {
     console.log('Go bitch');
