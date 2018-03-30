@@ -172,8 +172,7 @@ bot.on('message', msg => {
 	}else{
 		if(h === 12, m === 00){
 			bot.channels.get('429349387139809281').send('```*собирает повстанцев*```')
-		}
-		return;
+		};
 	}
 		
     if(ignoreCase.equals(msg.content, 'g!heart')){
