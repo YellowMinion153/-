@@ -130,7 +130,7 @@ bot.on('message', msg => {
             return;
         }
     }
-	
+
 	if(ignoreCase.equals(msg.content, 'set.time 60')){
 		if(msg.author.id === '278984183240720385'){
 			m = m + 60;
@@ -138,7 +138,7 @@ bot.on('message', msg => {
 		}
 		return;
 	};
-	
+
 	if(ignoreCase.equals(msg.content, 'set.time 24')){
 		if(msg.author.id === '278984183240720385'){
 			h = h + 24;
@@ -146,7 +146,7 @@ bot.on('message', msg => {
 		}
 		return;
 	};
-	
+
 	if(ignoreCase.equals(msg.content, 'подготовка')){
 		if(msg.author.id === '278984183240720385'){
 			h = 11;
@@ -155,7 +155,7 @@ bot.on('message', msg => {
 		}
 		return;
 	};
-	
+
 	if(ignoreCase.equals(msg.content, 'restart.time')){
 		if(msg.author.id === '278984183240720385'){
 			d = 0;
@@ -165,15 +165,9 @@ bot.on('message', msg => {
 		}
 		return;
 	};
-	
-	if(ignoreCase.equals(msg.content, '```*собирает повстанцев*```')){
-		m = m + 1;
-		return;
-	}else{
 		if(h === 12, m === 00){
 			bot.channels.get('429349387139809281').send('```*собирает повстанцев*```')
 		};
-	}
 		
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
