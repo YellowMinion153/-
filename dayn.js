@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 var ignoreCase = require('ignore-case');
-
+var n = ~;
 var d = 00, h = 00, m = 00;
 
 bot.on('ready', () => {
@@ -11,8 +11,7 @@ bot.user.setPresence({ game: { name: 'Вьетнам', type: 2} });
 
 var i = 0;
 bot.on('message', msg => {
-    if(i === 1
-)
+    if(i === 1)
 if (ignoreCase.equals(msg.content, 'Сломать палец')) {
     msg.channel.send("`*кричит от боли, но не говорит миликанцам ничего*`");
     i = 0;
