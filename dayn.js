@@ -166,7 +166,7 @@ bot.on('message', msg => {
 		return;
 	};
 
-		if(formattedH = '12' + ':' + formattedM = '00' === 12:00){
+		if(h === 12, m === 00){
 			bot.channels.get('429349387139809281').send('```*собирает повстанцев*```')
       return;
 		};
