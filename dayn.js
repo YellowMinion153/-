@@ -195,7 +195,7 @@ updateInOneMinute = function(){
     }
 
     if(h === 12, m === 00){
-        bot.channels.get('423591720094007308').send('``*собирает отряды гуков*``')
+        bot.channels.get('429349387139809281').send('``*собирает отряды гуков*``')
     };
 
     formateTime();
