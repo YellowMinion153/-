@@ -166,6 +166,11 @@ bot.on('message', msg => {
 		return;
 	};
 
+	if(h === 12, m === 00){
+	    client.channels.get('423591720094007308').send('``*собирает отряды гуков*``')
+        return;
+    };
+
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
