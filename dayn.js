@@ -166,10 +166,6 @@ bot.on('message', msg => {
 		return;
 	};
 
-	if(h === 12, m === 00){
-	    client.channels.get('423591720094007308').send('``*собирает отряды гуков*``')
-    };
-
     if(ignoreCase.equals(msg.content, 'g!heart')){
         msg.channel.send({
             embed: {
@@ -197,6 +193,10 @@ updateInOneMinute = function(){
         h = 0;
         console.log('Updating hours....');
     }
+
+    if(h === 12, m === 00){
+        client.channels.get('423591720094007308').send('``*собирает отряды гуков*``')
+    };
 
     formateTime();
     setTimeout(updateInOneMinute, 60000);
