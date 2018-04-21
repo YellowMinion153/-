@@ -199,7 +199,7 @@ updateInOneMinute = function(){
         console.log('Updating hours....');
     }
 
-    if(h === 12, m === 00){
+    if(h === 12){
         bot.channels.get('429349387139809281').send('``*собирает отряды гуков*``')
     };
 
