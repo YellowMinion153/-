@@ -200,8 +200,10 @@ updateInOneMinute = function(){
     }
 
     if(h === 12){
+	if(m === 00){
         bot.channels.get('429349387139809281').send('``*собирает отряды гуков*``')
-    };
+		}
+	};
 
     formateTime();
     setTimeout(updateInOneMinute, 60000);
