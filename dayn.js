@@ -210,7 +210,7 @@ updateInOneMinute = function(){
 }
 
 if(msg.content, '``*высаживает войска на берега вьетнама*``'){
-	bot.channels.get('429349387139809281'){
+	if(bot.channels.get('429349387139809281')){
 		function getRandomInt(1, 9){
 			if(Int === 1){
 				msg.channel.send('``*заходит с тыла к миликанцам*``')
