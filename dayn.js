@@ -209,19 +209,6 @@ updateInOneMinute = function(){
     setTimeout(updateInOneMinute, 60000);
 }
 
-if(msg.content, '``*высаживает войска на берега вьетнама*``'){
-	if(bot.channels.get('429349387139809281')){
-		function getRandomInt(1, 9){
-			if(Int === 1){
-				msg.channel.send('``*заходит с тыла к миликанцам*``')
-			};
-			if(Int === 2){
-				msg.channel.send('``*роет противотанковые окопы*``')
-			};
-		};
-	};
-};
-
 formateTime = function(){
 
     var formattedM = '', formattedH = '', formattedD = '';
